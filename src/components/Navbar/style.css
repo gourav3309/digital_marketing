@@ -1,0 +1,123 @@
+/* Navbar styling */
+.navbar {
+    height: 80px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Ensure flex display for alignment */
+    align-items: center; /* Center items vertically */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    height: 140px; /* Set a height for the logo */
+    padding-right: 30px; /* Space between logo and navbar items */
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 60px; /* Adjust logo size for smaller screens */
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #ffffff, #3c065e); 
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, top 0.3s ease; /* Added transition for top */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.sticky + .content {
+    padding-top: 70px; /* Adjust this value based on the height of your navbar */
+  }
+
+.navbar-brand {
+    color: #fff; /* Ensure the text is white */
+    font-weight: bold; /* Make the text bold */
+}
+.navbar-toggler-icon{
+    color: white;
+}
+
+.nav-item {
+    margin-left: 40px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-item .nav-link:hover {
+    color: #000;
+    transition: width 0.5s ease;
+}
+
+.nav-bg {
+    background: linear-gradient(to right, #ffffff, #ffffff); 
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #fe4c1c;
+}
+
+/* Add a background overlay when the toggler is open */
+.navbar-collapse.show {
+    background-color: white; /* Semi-transparent background */
+    position: fixed;
+    top: 80px; /* Adjust based on your navbar height */
+    bottom: auto;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding-bottom: 30px;
+}
+
+/* Add this to your CSS file */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-button {
+    background-color: #fe4c1c; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Flex display for alignment */
+    align-items: center; /* Center items vertically */
+    transition: background-color 0.3s ease; /* Transition for background color */
+    margin-left: 37px;
+    
+}
+
+.animated-button:hover {
+    background-color: #3c065e; /* Change background on hover */
+}
+
+.arrow-icon {
+    margin-left: 8px; /* Space between text and icon */
+    transition: transform 0.3s ease; /* Transition for animation */
+}
+
+.animated-button:hover .arrow-icon {
+    transform: translateX(5px); /* Move the arrow on hover */
+}
+
+/* Add this to your CSS file */
+.nav-link.active {
+    color: #fe4c1c; /* Change this to your desired active color */
+    font-weight: bold; /* Optional: make the active link bold */
+}
