@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.page-title-area-about-us {
+  padding-bottom: 105px;
+  padding-top: 145px;
+  /* background-color: #3c065e; */ /* Removed background color */
+  background-image: url('../src/assets/Images/blog-2.jpg'); /* Added background image */
+  background-size: cover; /* Optional: to cover the entire area */
+  background-position: center; /* Optional: to center the image */
+  background-attachment: fixed; /* Added to make the background image sticky */
+
+  text-align: center;
+  color: #fe4c1c;
+}
+.page-title-area-contact-us {
+  padding-bottom: 105px;
+  padding-top: 145px;
+  /* background-color: #3c065e; */ /* Removed background color */
+  background-image: url('../src/assets/Images/blog-1.jpg'); /* Added background image */
+  background-size: cover; /* Optional: to cover the entire area */
+  background-position: center; /* Optional: to center the image */
+  background-attachment: fixed; /* Added to make the background image sticky */
+
+  text-align: center;
+  color: #fe4c1c;
+}
+.page-title-area-services {
+  padding-bottom: 105px;
+  padding-top: 145px;
+  /* background-color: #3c065e; */ /* Removed background color */
+  background-image: url('../src/assets/Images/blog-3.jpg'); /* Added background image */
+  background-size: cover; /* Optional: to cover the entire area */
+  background-position: center; /* Optional: to center the image */
+  background-attachment: fixed; /* Added to make the background image sticky */
+  text-align: center;
+  color: #fe4c1c;
+}
+.page-title-area-price {
+  padding-bottom: 105px;
+  padding-top: 145px;
+  /* background-color: #3c065e; */ /* Removed background color */
+  background-image: url('../src/assets/Images/hero-1.jpg'); /* Added background image */
+  background-size: cover; /* Optional: to cover the entire area */
+  background-position: center; /* Optional: to center the image */
+  background-attachment: fixed; /* Added to make the background image sticky */
+
+  text-align: center;
+  color: #fe4c1c;
+}
+.page-title-area-our-team {
+  padding-bottom: 105px;
+  padding-top: 145px;
+  /* background-color: #3c065e; */ /* Removed background color */
+  background-image: url('../src/assets/Images/cntact-img.jpg'); /* Added background image */
+  background-size: cover; /* Optional: to cover the entire area */
+  background-attachment: fixed; /* Added to make the background image sticky */
+
+  background-position: center; /* Optional: to center the image */
+  text-align: center;
+  color: #fe4c1c;
+  
+}
+.page-title-area-about-us .page-title-area-contact-us .page-title-area-price .page-title-area-services .page-title-area-our-team  h1 {
+  margin-bottom: 0;
+  font-weight: 700;
+
+}
+.page-title-area-about-us h1,
+.page-title-area-contact-us h1,
+.page-title-area-services h1,
+.page-title-area-price h1,
+.page-title-area-our-team h1 {
+  font-weight: bold;
+}

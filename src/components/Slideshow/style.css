@@ -1,0 +1,120 @@
+.home {
+    background: linear-gradient(115deg, #06a5d3, #37176c, #37176c, #06a5d3);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Add gradient animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Add text shadow effect */
+.home .slideshow-text h3, .home .slideshow-text h6 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: text-shadow 0.3s ease;
+}
+
+.home .slideshow-text h3:hover, .home .slideshow-text h6:hover {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+}
+
+.home .slideshow-text {
+    margin: 30px 0px 30px 0px;
+    text-align: left;
+}
+
+.home .slideshow-text h3 {
+    color: #ffff;
+    font-size: 50px;
+    margin: 20px 0px 20px 0px;
+}
+
+/* Add fade animation styles */
+.home .slideshow-text h6 {
+    color: #ffff;
+    font-size: 22px;
+    margin: 140px 0px 10px 0px;
+}
+
+.home .slideshow-text p {
+    color: #ffff;
+    margin: 30px 0px 20px 0px;
+    line-height: 26px;
+}
+
+.home .slideshow-text .about-btn {
+    background-color: #fe4c1c;
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.home .slideshow-text .about-btn:hover {
+    background-color: #fff;
+    transition: 1s;
+    color: #000;
+}
+
+.home .home_img_right {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 80px 0px;
+    transition: opacity 0.5s ease;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Gradient shadow effect */
+.home .home_img_right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(115deg, rgba(255, 255, 255, 0.745), rgba(55, 23, 108, 0.5));
+    z-index: 1;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+/* Fade-in effect for images */
+.fade-in {
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Keyframes for fade-in effect for each character */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply the animation to each character in the heading */
+.slideshow-text h6, .slideshow-text h3 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
+
+.slideshow-text h6 span, .slideshow-text h3 span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    animation-delay: calc(var(--char-index) * 0.1s);
+}
+
+.home .col-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
